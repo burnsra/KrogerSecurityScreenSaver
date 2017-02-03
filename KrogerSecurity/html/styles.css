@@ -29,7 +29,9 @@ body {
   height: 48px;
   float: left;
   opacity: 0.75;
-  box-sizing: border-box; }
+  margin-top: -10px;
+  box-sizing: border-box;
+  font-size: 54px; }
 
 .fading {
   -webkit-animation: fading 4s 1; }

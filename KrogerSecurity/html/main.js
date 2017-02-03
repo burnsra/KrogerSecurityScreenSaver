@@ -59,8 +59,10 @@
         };
 
         Saver.prototype.drawBoxes = function() {
-            var box, col, row, _i, _ref, _results;
+            var box, col, row, _i, _ref, _results, _icon_current, _icon_previous;
             _results = [];
+            _icon_current = 1;
+            _icon_previous = 1;
             for (row = _i = 1, _ref = this.rows; 1 <= _ref ? _i <= _ref : _i >= _ref; row = 1 <= _ref ? ++_i : --_i) {
                 _results.push((function() {
                     var _j, _ref1, _results1;
@@ -74,8 +76,13 @@
                                 box.classList.add('icon-logo-icomoon');
                             }
                         } else {
+                            do {
+                               _icon_current = Math.floor(Math.random() * this.icons.length);
+                            }
+                            while (_icon_current == _icon_previous);
+                            _icon_previous = _icon_current;
                             box.classList.add('icon');
-                            box.classList.add('icon-' + this.icons[Math.floor(Math.random() * this.icons.length)]);
+                            box.classList.add('icon-' + this.icons[_icon_current]);
                         }
                         _results1.push(this.container.appendChild(box));
                     }
