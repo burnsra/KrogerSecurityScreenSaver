@@ -1,8 +1,8 @@
-# SwiftScreenSaverTemplate
+# KrogerSecurity
 
 ## Overview
 
-**SwiftScreenSaverTemplate** is a MacOS screen saver written in Swift.  The example HTML content is based upon octoscreen, referenced in the [acknowledgements](#acknowledgements) section below.  This screen saver template provides the following features:
+**KrogerSecurity** is a MacOS screen saver written in Swift.  The example HTML content is based upon octoscreen, referenced in the [acknowledgements](#acknowledgements) section below.  This screen saver template provides the following features:
 
 - Embedded HTML based screen saver
 
@@ -18,15 +18,15 @@ Screen Saver - Animation
 
 ## Customizing
 
-Replace the instance of "NewSwiftScreenSaver" in the first command below with your desired project name.
+Replace the instance of "NewKrogerSecurity" in the first command below with your desired project name.
 
 ```sh
-$ export newScreenSaverName="NewSwiftScreenSaver"
-$ git clone https://github.com/burnsra/SwiftScreenSaverTemplate.git "$newScreenSaverName"
+$ export newScreenSaverName="NewKrogerSecurity"
+$ git clone https://github.com/burnsra/KrogerSecurity.git "$newScreenSaverName"
 $ cd "$newScreenSaverName"
-$ git mv SwiftScreenSaverTemplate "$newScreenSaverName"
-$ git mv SwiftScreenSaverTemplate.xcodeproj "$newScreenSaverName".xcodeproj
-$ find README.md "$newScreenSaverName" "$newScreenSaverName".xcodeproj -path "*html*" -prune -o -type f -print0 | xargs -0 sed -i "" "s/SwiftScreenSaverTemplate/$newScreenSaverName/g"
+$ git mv KrogerSecurity "$newScreenSaverName"
+$ git mv KrogerSecurity.xcodeproj "$newScreenSaverName".xcodeproj
+$ find README.md "$newScreenSaverName" "$newScreenSaverName".xcodeproj -path "*html*" -prune -o -type f -print0 | xargs -0 sed -i "" "s/KrogerSecurity/$newScreenSaverName/g"
 $ git add -A
 $ git commit -m "Renamed template screen saver project to "$newScreenSaverName
 $ unset newScreenSaverName
@@ -43,4 +43,4 @@ Do you want to improve the app or add any useful features? Please go ahead and c
 
 ## License
 
-[MIT](https://github.com/burnsra/SwiftScreenSaverTemplate/blob/master/LICENSE) © Robert Burns
+[MIT](https://github.com/burnsra/KrogerSecurity/blob/master/LICENSE) © Robert Burns
