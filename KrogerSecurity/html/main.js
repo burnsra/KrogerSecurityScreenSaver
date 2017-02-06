@@ -21,14 +21,7 @@
         };
 
         Saver.prototype.setIcons = function() {
-            $.ajaxSetup({ async: false });
-            var _icons = new Array;
-            var jqxhr = $.getJSON('selection.json', function(json){
-                for(var i = 0; i < json.icons.length; i++) {
-                    var obj = json.icons[i];
-                    _icons.push(obj.properties.name);
-                }
-            });
+            var _icons = ["fire", "credit-card", "eye", "binary", "agent", "link", "puzzle", "steps", "bug", "logo-icomoon", "network", "fingerprint", "guard", "mask", "key", "shield", "padlock", "safe", "pin", "pattern", "firewall", "lockscreen"];
             this.icons = _icons;
             if( $.inArray('logo-icomoon', this.icons) != -1) {
                 this.logoIcon = true;
